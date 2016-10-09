@@ -521,7 +521,7 @@ namespace DraftTwitchViewers
                             string userDrawn = usersInChat[UnityEngine.Random.Range(0, usersInChat.Count)];
 
                             // Creates a new Unity web request (WWW) using the user chosen.
-                            WWW getUser = new WWW("https://api.twitch.tv/kraken/users/" + userDrawn);
+                            WWW getUser = new WWW("https://api.twitch.tv/kraken/users/" + userDrawn + "/?client_id=shi6vkdno2d1ryo822ua828o65v93q3");
 
                             // Waits for the web request to finish.
                             yield return getUser;
@@ -595,7 +595,7 @@ namespace DraftTwitchViewers
                                 string userDrafted = usersInChat[UnityEngine.Random.Range(0, usersInChat.Count)];
 
                                 // Creates a new Unity web request (WWW) using the user chosen.
-                                WWW getUser = new WWW("https://api.twitch.tv/kraken/users/" + userDrafted);
+                                WWW getUser = new WWW("https://api.twitch.tv/kraken/users/" + userDrafted + "/?client_id=shi6vkdno2d1ryo822ua828o65v93q3");
 
                                 // Waits for the web request to finish.
                                 yield return getUser;
